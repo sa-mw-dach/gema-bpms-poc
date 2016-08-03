@@ -64,13 +64,20 @@
 <property name="readonly" value="false"/>
 <property name="fieldClass" value="Separator"/>
 </field>
-<field position="7" name="MatchResult" type="InputText" id="1648810348">
+<field position="6" name=":decorator_1" type="HTMLLabel" id="1770545444">
 <property name="fieldRequired" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;dequot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;enquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;esquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;frquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;jaquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;ptquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;quot;zhquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt; quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<field position="7" name="MatchResult" type="InputText" id="1648810348">
+<property name="fieldRequired" value="true"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;MatchResult: CREATE | CASEMANAGEMENT | EXACTquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Ergebnis Entscheidungstabellequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="rangeFormula" value="{,;Kein Match,CREATE;Exakter Match,EXACT;Mehrere Matches,CASEMANAGEMENT}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="MatchResult"/>
@@ -79,53 +86,41 @@
 <field position="8" name="CreationDecision" type="InputText" id="1119024259">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;CreationDecision: DISCARD | CREATEquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Entscheidung Erstellerquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="rangeFormula" value="{,;Nutzungsmeldung verwerfen,DISCARD;Werk anlegen,CREATE}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="CreationDecision"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="10" name="CaseDecision" type="InputText" id="1335272451">
-<property name="fieldRequired" value="true"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;CaseDecision: MATCH | REMATCHquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="outputBinding" value="CaseDecision"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
 <field position="9" name="ApprovalDecision" type="InputText" id="1888432463">
-<property name="fieldRequired" value="true"/>
+<property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;ApprovalDecision: APPROVED | RETURNquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Entscheidung Genehmigungquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{,;Werk kann erstellt werden,MATCH;Überarbeitung durch Ersteller,REMATCH}"/>
+<property name="rangeFormula" value="{,;Werk ist genehmigt,APPROVED;zurück zum Ersteller,RETURN}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="ApprovalDecision"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name=":decorator_1" type="HTMLLabel" id="1770545444">
+<field position="10" name="CaseDecision" type="InputText" id="1335272451">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Entscheidung Case Managementquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;dequot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;enquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;esquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;frquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;jaquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;ptquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;quot;zhquot;,quot;&lt;h2&gt;(Entscheidungen)&lt;/h2&gt;
-quot;"/>
-<property name="fieldClass" value="HTMLlabel"/>
+<property name="rangeFormula" value="{,;Match gefunden,MATCH;Neu suchen,REMATCH}"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="CaseDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#9BCAFA" type="basicType" outId="ApprovalDecision" value="java.lang.String" id="ApprovalDecision"/>
 <dataHolder inputId="" name="#FBB767" type="basicType" outId="CaseDecision" value="java.lang.String" id="CaseDecision"/>
