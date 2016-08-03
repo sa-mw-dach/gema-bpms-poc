@@ -3,43 +3,16 @@
 <property name="name" value="OperaMatching.GEMA_Matching_Process-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="8" name="ApprovalDecision" type="InputText" id="1888432463">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;ApprovalDecision (ApprovalDecision)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="ApprovalDecision"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="9" name="CaseDecision" type="InputText" id="1335272451">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;CaseDecision (CaseDecision)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="CaseDecision"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="10" name="CreationDecision" type="InputText" id="1119024259">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;CreationDecision (CreationDecision)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="CreationDecision"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="11" name="MatchResult" type="InputText" id="1648810348">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;MatchResult (MatchResult)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MatchResult"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
 <field position="0" name="WorkIncoming_author" type="InputText" id="1611491076">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;author (WorkIncoming)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Authorquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="WorkIncoming/author"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_work/author"/>
+<property name="outputBinding" value="out_work/author"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="1" name="WorkIncoming_date" type="InputDate" id="799415819">
@@ -65,7 +38,7 @@
 </field>
 <field position="4" name="WorkToBeCreated_author" type="InputText" id="1672440629">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;author (WorkToBeCreated)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;author (WorkToBeCreated)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
@@ -94,6 +67,43 @@
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="WorkToBeCreated/title"/>
 <property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name="ApprovalDecision" type="InputText" id="1888432463">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;ApprovalDecision (ApprovalDecision)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="ApprovalDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="CaseDecision" type="InputText" id="1335272451">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;CaseDecision (CaseDecision)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="CaseDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="CreationDecision" type="InputText" id="1119024259">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;CreationDecision (CreationDecision)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="CreationDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="MatchResult" type="InputText" id="1648810348">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;MatchResult (MatchResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MatchResult"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name=":decorator_0" type="Separator" id="360940171">
+<property name="fieldRequired" value="false"/>
+<property name="readonly" value="false"/>
+<property name="fieldClass" value="Separator"/>
 </field>
 <dataHolder inputId="" name="#9BCAFA" type="basicType" outId="ApprovalDecision" value="java.lang.String" id="ApprovalDecision"/>
 <dataHolder inputId="" name="#FBB767" type="basicType" outId="CaseDecision" value="java.lang.String" id="CaseDecision"/>
