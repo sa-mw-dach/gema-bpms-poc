@@ -67,15 +67,7 @@
 <field position="6" name=":decorator_1" type="HTMLLabel" id="1770545444">
 <property name="fieldRequired" value="false"/>
 <property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;dequot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;enquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;esquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;frquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;jaquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;ptquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;quot;zhquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt;
-quot;"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;dequot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;enquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;esquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;frquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;jaquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;ptquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;quot;zhquot;,quot;&lt;h2&gt;Prozess Entscheidungen&lt;/h2&gt; quot;"/>
 <property name="fieldClass" value="HTMLlabel"/>
 </field>
 <field position="7" name="MatchResult" type="InputText" id="1648810348">
@@ -85,7 +77,7 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{,;Kein Match,CREATE;Exakter Match,EXACT;Mehrere Matches,CASEMANAGEMENT}"/>
+<property name="rangeFormula" value="{,;CREATE,Kein Match;EXACT,Exakter Match;CASEMANAGEMENT,Mehrere Matches}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="MatchResult"/>
@@ -98,7 +90,7 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{,;Nutzungsmeldung verwerfen,DISCARD;Werk anlegen,CREATE}"/>
+<property name="rangeFormula" value="{,;DISCARD,Nutzungsmeldung verwerfen;CREATE,Werk anlegen}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="CreationDecision"/>
@@ -111,7 +103,7 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{,;Werk ist genehmigt,APPROVED;zurück zum Ersteller,RETURN}"/>
+<property name="rangeFormula" value="{,;APPROVED,Werk ist genehmigt;RETURN,zurück zum Ersteller}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="ApprovalDecision"/>
@@ -124,7 +116,7 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{,;Match gefunden,MATCH;Neu suchen,REMATCH}"/>
+<property name="rangeFormula" value="{,;MATCH,Match gefunden;REMATCH,Neu suchen}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="outputBinding" value="CaseDecision"/>
