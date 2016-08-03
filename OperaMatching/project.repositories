@@ -27,14 +27,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>fusesource</id>
         <url>https://repo.fusesource.com/nexus/content/repositories/releases</url>
         <source>SETTINGS</source>
@@ -43,8 +35,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>http://209.132.178.154:8080/business-central/maven2/</url>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
       </metadata>
     </repository>
@@ -54,6 +46,14 @@
         <id>jboss-org</id>
         <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
         <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>guvnor-m2-repo</id>
+        <url>http://209.132.178.154:8080/business-central/maven2/</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
