@@ -138,10 +138,11 @@
 <property name="rangeFormula" value="{,;DISCARD,Nutzungsmeldung verwerfen;CREATE,Werk anlegen}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="outputBinding" value="out_CreateDecision"/>
+<property name="inputBinding" value="CreateDecision"/>
+<property name="outputBinding" value="CreateDecision"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="out_CreateDecision" value="java.lang.String" id="CreateDecision "/>
+<dataHolder inputId="CreateDecision " name="#9BCAFA" type="basicType" outId="CreateDecision " value="java.lang.String" id="CreateDecision "/>
 <dataHolder inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
 <dataHolder inputId="in_WorkToBeCreated" name="#E9E371" type="dataModelerEntry" outId="out_WorkToBeCreated" value="de.agentbase.projects.gema_mplus.work" id="WorkToBeCreated"/>
 </form>
