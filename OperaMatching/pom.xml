@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>gema</groupId>
-  <artifactId>OperaMatching</artifactId>
+  <artifactId>MPlusMatching</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>OperaMatching</name>
+  <name>MPlusMatching</name>
   <properties>
     <version.bpms>6.4.0.Final-redhat-6</version.bpms>
   </properties>
