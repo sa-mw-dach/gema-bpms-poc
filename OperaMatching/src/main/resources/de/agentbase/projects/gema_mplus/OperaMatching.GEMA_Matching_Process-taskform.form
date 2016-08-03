@@ -1,0 +1,96 @@
+
+<form id="509854370">
+<property name="name" value="OperaMatching.GEMA_Matching_Process-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="ApprovalDecision" type="InputText" id="1888432463">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ApprovalDecision (ApprovalDecision)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="ApprovalDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="CreationDecision" type="InputText" id="1119024259">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;CreationDecision (CreationDecision)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="CreationDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="WorkToBeCreated_duration" type="InputTextInteger" id="90514055">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;duration (WorkToBeCreated)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkToBeCreated/duration"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="11" name="WorkToBeCreated_title" type="InputText" id="1613602895">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (WorkToBeCreated)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkToBeCreated/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="CaseDecision" type="InputText" id="1335272451">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;CaseDecision (CaseDecision)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="CaseDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="WorkIncoming_author" type="InputText" id="1611491076">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;author (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkIncoming/author"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="WorkToBeCreated_date" type="InputDate" id="1604070949">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (WorkToBeCreated)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkToBeCreated/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="3" name="MatchResult" type="InputText" id="1648810348">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;MatchResult (MatchResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MatchResult"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="WorkIncoming_duration" type="InputTextInteger" id="1217171878">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;duration (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkIncoming/duration"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="7" name="WorkIncoming_title" type="InputText" id="1901393038">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkIncoming/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="WorkToBeCreated_author" type="InputText" id="1672440629">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;author (WorkToBeCreated)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkToBeCreated/author"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="WorkIncoming_date" type="InputDate" id="799415819">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="WorkIncoming/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="ApprovalDecision" value="java.lang.String" id="ApprovalDecision"/>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="CaseDecision" value="java.lang.String" id="CaseDecision"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="CreationDecision" value="java.lang.String" id="CreationDecision"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="MatchResult" value="java.lang.String" id="MatchResult"/>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
+<dataHolder inputId="" name="#BBBBBB" type="dataModelerEntry" outId="WorkToBeCreated" value="de.agentbase.projects.gema_mplus.work" id="WorkToBeCreated"/>
+</form>
