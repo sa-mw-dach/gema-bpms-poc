@@ -7,7 +7,15 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;dequot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;enquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;esquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;frquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;jaquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;ptquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;quot;zhquot;,quot;&lt;h2&gt;Eingehendes Werk&lt;/h2&gt; quot;"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;dequot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;enquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;esquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;frquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;jaquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;ptquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;quot;zhquot;,quot;&lt;h2&gt;Eingehende Nutzungsmeldung&lt;/h2&gt;
+quot;"/>
 <property name="fieldClass" value="HTMLlabel"/>
 </field>
 <field position="1" name="WorkIncoming_author" type="InputText" id="1990133094">
@@ -16,7 +24,7 @@
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Autorquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
+<property name="readonly" value="true"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_WorkIncoming/author"/>
@@ -50,7 +58,7 @@
 <field position="4" name="WorkIncoming_duration" type="InputTextInteger" id="2014154702">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Dauerquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Dauer (in Sekunden)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="true"/>
@@ -63,5 +71,102 @@
 <property name="readonly" value="false"/>
 <property name="fieldClass" value="Separator"/>
 </field>
+<field position="6" name=":decorator_2" type="HTMLLabel" id="900340130">
+<property name="fieldRequired" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;dequot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;enquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;esquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;frquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;jaquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;ptquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;zhquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<field position="7" name="WorkToBeCreated_author" type="InputText" id="1922801255">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Autorquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_WorkToBeCreated/author"/>
+<property name="outputBinding" value="out_WorkToBeCreated/author"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="WorkToBeCreated_date" type="InputShortDate" id="613493059">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Datumquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_WorkToBeCreated/date"/>
+<property name="outputBinding" value="out_WorkToBeCreated/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="10" name="WorkToBeCreated_duration" type="InputTextInteger" id="1696862110">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Dauer (in Sekunden)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_WorkToBeCreated/duration"/>
+<property name="outputBinding" value="out_WorkToBeCreated/duration"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="8" name="WorkToBeCreated_title" type="InputText" id="923313919">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Titelquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_WorkToBeCreated/title"/>
+<property name="outputBinding" value="out_WorkToBeCreated/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name=":decorator_3" type="Separator" id="2041717575">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="fieldClass" value="Separator"/>
+</field>
+<field position="13" name="CreateDecision" type="InputText" id="2139656479">
+<property name="fieldRequired" value="true"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Entscheidungquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="rangeFormula" value="{,;DISCARD,Nutzungsmeldung verwerfen;CREATE,Werk anlegen}"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_CreateDecision"/>
+<property name="outputBinding" value="out_CreateDecision"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name=":decorator_4" type="HTMLLabel" id="108987937">
+<property name="fieldRequired" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;dequot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;enquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;esquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;frquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;jaquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;ptquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;quot;zhquot;,quot;&lt;h2&gt;Entscheidung&lt;/h2&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<dataHolder inputId="in_CreateDecision" name="#9BCAFA" type="basicType" outId="out_CreateDecision" value="java.lang.String" id="CreateDecision"/>
 <dataHolder inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
+<dataHolder inputId="in_WorkToBeCreated" name="#E9E371" type="dataModelerEntry" outId="out_WorkToBeCreated" value="de.agentbase.projects.gema_mplus.work" id="WorkToBeCreated"/>
 </form>
