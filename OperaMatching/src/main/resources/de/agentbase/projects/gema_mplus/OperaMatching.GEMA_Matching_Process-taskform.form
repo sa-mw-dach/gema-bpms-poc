@@ -19,7 +19,7 @@
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="outputBinding" value=" WorkIncoming/author"/>
+<property name="outputBinding" value="WorkIncoming/author"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="WorkIncoming_title" type="InputText" id="1901393038">
@@ -31,7 +31,7 @@
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="outputBinding" value=" WorkIncoming/title"/>
+<property name="outputBinding" value="WorkIncoming/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="3" name="WorkIncoming_date" type="InputShortDate" id="799415819">
@@ -41,7 +41,7 @@
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value=" WorkIncoming/date"/>
+<property name="outputBinding" value="WorkIncoming/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="4" name="WorkIncoming_duration" type="InputTextInteger" id="1217171878">
@@ -51,7 +51,7 @@
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value=" WorkIncoming/duration"/>
+<property name="outputBinding" value="WorkIncoming/duration"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
 <field position="5" name=":decorator_0" type="Separator" id="360940171">
