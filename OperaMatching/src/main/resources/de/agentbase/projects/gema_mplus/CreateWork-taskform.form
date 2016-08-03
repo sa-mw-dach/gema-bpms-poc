@@ -1,0 +1,39 @@
+
+<form id="1033513025">
+<property name="name" value="CreateWork-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="WorkIncoming_title" type="InputText" id="2109363883">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_WorkIncoming/title"/>
+<property name="outputBinding" value="out_WorkIncoming/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="WorkIncoming_duration" type="InputTextInteger" id="2014154702">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;duration (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_WorkIncoming/duration"/>
+<property name="outputBinding" value="out_WorkIncoming/duration"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="WorkIncoming_date" type="InputDate" id="1784684149">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_WorkIncoming/date"/>
+<property name="outputBinding" value="out_WorkIncoming/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="0" name="WorkIncoming_author" type="InputText" id="1990133094">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;author (WorkIncoming)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_WorkIncoming/author"/>
+<property name="outputBinding" value="out_WorkIncoming/author"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
+</form>
