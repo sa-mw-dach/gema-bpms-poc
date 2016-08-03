@@ -148,7 +148,7 @@
       <boundName>$mc</boundName>
       <factField>stopAdding</factField>
       <type>Boolean</type>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
@@ -220,7 +220,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">100</valueNumeric>
+        <valueNumeric class="int">101</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
