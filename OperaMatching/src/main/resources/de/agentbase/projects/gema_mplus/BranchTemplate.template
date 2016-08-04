@@ -1,7 +1,12 @@
 <rule>
   <name>BranchTemplate</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>filter</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <freeForm>
