@@ -29,7 +29,7 @@
   <rhs>
     <freeForm>
       <text>System.out.println( &quot;@{branch}&quot;);
-kcontext..getKieRuntime().setGlobal(&quot;MatchResult&quot;, &quot;@{branch}&quot;);</text>
+kcontext.getKieRuntime().setGlobal(&quot;MatchResult&quot;, &quot;@{branch}&quot;);</text>
     </freeForm>
   </rhs>
   <imports>
