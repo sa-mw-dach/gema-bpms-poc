@@ -8,7 +8,13 @@
       <text>matchCollection (name == &quot;high&quot; , match.size &gt; @{high_at_least})</text>
     </freeForm>
     <freeForm>
+      <text>matchCollection (name == &quot;high&quot; , match.size == @{high_is_equal})</text>
+    </freeForm>
+    <freeForm>
       <text>matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium_at_least})</text>
+    </freeForm>
+    <freeForm>
+      <text>matchCollection (name == &quot;medium&quot; , match.size == @{medium_is_equal})</text>
     </freeForm>
   </lhs>
   <rhs>
@@ -23,11 +29,19 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>high_is_equal</string>
+      <list/>
+    </entry>
+    <entry>
       <string>high_at_least</string>
       <list/>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>medium_is_equal</string>
       <list/>
     </entry>
     <entry>
