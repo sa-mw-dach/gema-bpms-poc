@@ -22,21 +22,29 @@ matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium at least}
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
     <entry>
       <string>medium at least</string>
-      <list/>
+      <list>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>high at least</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
     <entry>
       <string>branch</string>
-      <list/>
+      <list>
+        <string>CASE</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
