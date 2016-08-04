@@ -66,14 +66,14 @@
 <field position="6" name=":decorator_2" type="HTMLLabel" id="900340130">
 <property name="fieldRequired" value="false"/>
 <property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;dequot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;enquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;esquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;frquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;jaquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;ptquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
-quot;quot;zhquot;,quot;&lt;h2&gt;Angepasste Nutzungsmeldung&lt;/h2&gt;
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;dequot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;enquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;esquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;frquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;jaquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;ptquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
+quot;quot;zhquot;,quot;&lt;h2&gt;Neues Werk&lt;/h2&gt;
 quot;"/>
 <property name="fieldClass" value="HTMLlabel"/>
 </field>
@@ -85,8 +85,8 @@ quot;"/>
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="in_WorkForRematch/author"/>
-<property name="outputBinding" value="out_WorkForRematch/author"/>
+<property name="inputBinding" value="in_WorkToBeCreated/author"/>
+<property name="outputBinding" value="out_WorkToBeCreated/author"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="8" name="WorkToBeCreated_title" type="InputText" id="923313919">
@@ -98,8 +98,8 @@ quot;"/>
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="in_WorkForRematch/title"/>
-<property name="outputBinding" value="out_WorkForRematch/title"/>
+<property name="inputBinding" value="in_WorkToBeCreated/title"/>
+<property name="outputBinding" value="out_WorkToBeCreated/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="9" name="WorkToBeCreated_date" type="InputShortDate" id="613493059">
@@ -109,8 +109,8 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="in_WorkForRematch/date"/>
-<property name="outputBinding" value="out_WorkForRematch/date"/>
+<property name="inputBinding" value="in_WorkToBeCreated/date"/>
+<property name="outputBinding" value="out_WorkToBeCreated/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="10" name="WorkToBeCreated_duration" type="InputTextInteger" id="1696862110">
@@ -120,8 +120,8 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="in_WorkForRematch/duration"/>
-<property name="outputBinding" value="out_WorkForRematch/duration"/>
+<property name="inputBinding" value="in_WorkToBeCreated/duration"/>
+<property name="outputBinding" value="out_WorkToBeCreated/duration"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
 <field position="11" name=":decorator_3" type="Separator" id="2041717575">
@@ -143,14 +143,14 @@ quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{,;MATCH,Match bestätigen;REMATCH,Neu matchen}"/>
+<property name="rangeFormula" value="{,;CREATE,Neues Werk anlegen;DISCARD,Nutzungsmeldung verwerfen}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_CaseDecision"/>
 <property name="outputBinding" value="out_CaseDecision"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="in_CaseDecision" name="#FF8881" type="basicType" outId="out_CaseDecision" value="java.lang.String" id="CaseDecision"/>
-<dataHolder inputId="in_WorkForRematch" name="#0000A0" type="dataModelerEntry" outId="out_WorkForRematch" value="de.agentbase.projects.gema_mplus.work" id="WorkForRematch"/>
+<dataHolder inputId="in_CreationDecision" name="#FF8881" type="basicType" outId="out_CreationDecision" value="java.lang.String" id="CreationDecision"/>
 <dataHolder inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
+<dataHolder inputId="in_WorkToBeCreated" name="#A7E690" type="dataModelerEntry" outId="out_WorkToBeCreated" value="de.agentbase.projects.gema_mplus.work" id="WorkToBeCreated"/>
 </form>
