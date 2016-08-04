@@ -3,8 +3,17 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <freeForm>
+      <text>matchCollection (name == &quot;high&quot; , match.size &gt; @{high at least})
+matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium at least})</text>
+    </freeForm>
+  </lhs>
+  <rhs>
+    <freeForm>
+      <text>System.out.println( &quot;@{branch}&quot;);</text>
+    </freeForm>
+  </rhs>
   <imports>
     <imports/>
   </imports>
@@ -13,6 +22,18 @@
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>medium at least</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>high at least</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>branch</string>
       <list/>
     </entry>
   </table>
