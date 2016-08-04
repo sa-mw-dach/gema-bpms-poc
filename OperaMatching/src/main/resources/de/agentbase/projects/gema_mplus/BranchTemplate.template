@@ -5,8 +5,8 @@
   <metadataList/>
   <lhs>
     <freeForm>
-      <text>matchCollection (name == &quot;high&quot; , match.size &gt; @{high_at_least})
-matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium_at_least})</text>
+      <text>matchCollection (name == &quot;high&quot; , match.size &gt; @{highatleast})
+matchCollection (name == &quot;medium&quot; , match.size &gt; @{mediumatleast})</text>
     </freeForm>
   </lhs>
   <rhs>
@@ -21,30 +21,30 @@ matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium_at_least}
   <isNegated>false</isNegated>
   <table>
     <entry>
-      <string>high_at_least</string>
+      <string>__ID_KOL_NAME__</string>
       <list>
-        <string>1</string>
+        <string>2</string>
       </list>
     </entry>
     <entry>
-      <string>__ID_KOL_NAME__</string>
+      <string>mediumatleast</string>
       <list>
-        <string>1</string>
+        <string></string>
       </list>
     </entry>
     <entry>
       <string>branch</string>
       <list>
-        <string>CASE</string>
+        <string>case</string>
       </list>
     </entry>
     <entry>
-      <string>medium_at_least</string>
+      <string>highatleast</string>
       <list>
         <string></string>
       </list>
     </entry>
   </table>
-  <idCol>1</idCol>
+  <idCol>2</idCol>
   <rowsCount>1</rowsCount>
 </rule>
