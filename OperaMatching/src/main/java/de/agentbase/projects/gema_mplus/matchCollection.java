@@ -12,28 +12,18 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label("Match")
-   @org.kie.api.definition.type.Position(0)
-   private java.util.List<de.agentbase.projects.gema_mplus.match> match;
-
    private match matchToAdd;
    private boolean stopAdding;
 
    private java.lang.String name;
 
+   @org.kie.api.definition.type.Label(value = "Match")
+   @org.kie.api.definition.type.Position(value = 0)
+   private java.util.List<de.agentbase.projects.gema_mplus.match> matchList;
+
    public matchCollection()
    {
       match = new ArrayList<de.agentbase.projects.gema_mplus.match>();
-   }
-
-   public java.util.List<de.agentbase.projects.gema_mplus.match> getMatch()
-   {
-      return this.match;
-   }
-
-   public void setMatch(java.util.List<de.agentbase.projects.gema_mplus.match> match)
-   {
-      this.match = match;
    }
 
    public match getMatchToAdd()
@@ -67,20 +57,30 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
       this.name = name;
    }
 
-   public matchCollection(
-         java.util.List<de.agentbase.projects.gema_mplus.match> match,
-         de.agentbase.projects.gema_mplus.match matchToAdd,
-         boolean stopAdding, java.lang.String name)
+   public java.util.List<de.agentbase.projects.gema_mplus.match> getMatchList()
    {
-      this.match = match;
+      return this.matchList;
+   }
+
+   public void setMatchList(
+         java.util.List<de.agentbase.projects.gema_mplus.match> matchList)
+   {
+      this.matchList = matchList;
+   }
+
+   public matchCollection(de.agentbase.projects.gema_mplus.match matchToAdd,
+         boolean stopAdding, java.lang.String name,
+         java.util.List<de.agentbase.projects.gema_mplus.match> matchList)
+   {
       this.matchToAdd = matchToAdd;
       this.stopAdding = stopAdding;
       this.name = name;
+      this.matchList = matchList;
    }
 
    public matchCollection(
-         java.util.List<de.agentbase.projects.gema_mplus.match> match)
+         java.util.List<de.agentbase.projects.gema_mplus.match> matchList)
    {
-      this.match = match;
+      this.matchList = matchList;
    }
 }
