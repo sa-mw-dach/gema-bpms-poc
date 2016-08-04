@@ -5,13 +5,13 @@
   <metadataList/>
   <lhs>
     <freeForm>
-      <text>matchCollection (name == &quot;high&quot; , list.size &gt; @{high_at_least})</text>
+      <text>matchCollection (name == &quot;high&quot; , list.size &gt; @{high_is_more})</text>
     </freeForm>
     <freeForm>
       <text>matchCollection (name == &quot;high&quot; , list.size == @{high_is_equal})</text>
     </freeForm>
     <freeForm>
-      <text>matchCollection (name == &quot;medium&quot; , list.size &gt; @{medium_at_least})</text>
+      <text>matchCollection (name == &quot;medium&quot; , list.size &gt; @{medium_is_more})</text>
     </freeForm>
     <freeForm>
       <text>matchCollection (name == &quot;medium&quot; , list.size == @{medium_is_equal})</text>
@@ -29,42 +29,60 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
-      <string>high_at_least</string>
-      <list>
-        <null/>
-      </list>
-    </entry>
-    <entry>
       <string>high_is_equal</string>
       <list>
-        <string>1</string>
+        <string>0</string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>0</string>
+        <string>1</string>
+        <string>0</string>
+        <string>0</string>
+      </list>
+    </entry>
+    <entry>
+      <string>high_is_more</string>
+      <list>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
     <entry>
       <string>medium_is_equal</string>
       <list>
+        <string>0</string>
+        <string></string>
+        <string></string>
         <string></string>
       </list>
     </entry>
     <entry>
       <string>branch</string>
       <list>
-        <string>EXACT</string>
+        <string>CREATION</string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
     <entry>
-      <string>medium_at_least</string>
+      <string>medium_is_more</string>
       <list>
+        <string></string>
+        <string></string>
+        <string></string>
         <string></string>
       </list>
     </entry>
   </table>
   <idCol>4</idCol>
-  <rowsCount>1</rowsCount>
+  <rowsCount>4</rowsCount>
 </rule>
