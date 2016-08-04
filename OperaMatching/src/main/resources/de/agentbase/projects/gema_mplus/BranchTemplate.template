@@ -33,7 +33,7 @@
       <list>
         <string>1</string>
         <string></string>
-        <string></string>
+        <string>0</string>
         <string></string>
       </list>
     </entry>
@@ -41,7 +41,7 @@
       <string>high_at_least</string>
       <list>
         <null/>
-        <string></string>
+        <string>2</string>
         <string></string>
         <string></string>
       </list>
@@ -68,8 +68,8 @@
       <string>branch</string>
       <list>
         <string>EXACT</string>
-        <string></string>
-        <string></string>
+        <string>CASE</string>
+        <string>CASE</string>
         <string></string>
       </list>
     </entry>
@@ -78,7 +78,7 @@
       <list>
         <null/>
         <string></string>
-        <string></string>
+        <string>1</string>
         <string></string>
       </list>
     </entry>
