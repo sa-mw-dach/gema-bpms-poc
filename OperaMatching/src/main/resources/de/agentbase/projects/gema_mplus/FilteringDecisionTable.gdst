@@ -120,7 +120,7 @@
       <factField>matchToAdd</factField>
       <type>match</type>
       <valueList>$m</valueList>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
