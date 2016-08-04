@@ -5,16 +5,16 @@
   <metadataList/>
   <lhs>
     <freeForm>
-      <text>matchCollection (name == &quot;high&quot; , matchList.size &gt; @{high_at_least})</text>
+      <text>matchCollection (name == &quot;high&quot; , list.size &gt; @{high_at_least})</text>
     </freeForm>
     <freeForm>
-      <text>matchCollection (name == &quot;high&quot; , matchList.size == @{high_is_equal})</text>
+      <text>matchCollection (name == &quot;high&quot; , list.size == @{high_is_equal})</text>
     </freeForm>
     <freeForm>
-      <text>matchCollection (name == &quot;medium&quot; , matchList.size &gt; @{medium_at_least})</text>
+      <text>matchCollection (name == &quot;medium&quot; , list.size &gt; @{medium_at_least})</text>
     </freeForm>
     <freeForm>
-      <text>matchCollection (name == &quot;medium&quot; , matchList.size == @{medium_is_equal})</text>
+      <text>matchCollection (name == &quot;medium&quot; , list.size == @{medium_is_equal})</text>
     </freeForm>
   </lhs>
   <rhs>
