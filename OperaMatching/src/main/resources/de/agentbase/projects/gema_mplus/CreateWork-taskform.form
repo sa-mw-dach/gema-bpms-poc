@@ -137,11 +137,11 @@
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="CreateDecision"/>
-<property name="outputBinding" value="CreateDecision"/>
+<property name="inputBinding" value="in_CreationDecision"/>
+<property name="outputBinding" value="out_CreationDecision"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="CreateDecision" name="#9BCAFA" type="basicType" outId="CreateDecision" value="java.lang.String" id="CreateDecision"/>
+<dataHolder inputId="in_CreationDecision" name="#9BCAFA" type="basicType" outId="out_CreationDecision" value="java.lang.String" id="CreationDecision"/>
 <dataHolder inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
 <dataHolder inputId="in_WorkToBeCreated" name="#E9E371" type="dataModelerEntry" outId="out_WorkToBeCreated" value="de.agentbase.projects.gema_mplus.work" id="WorkToBeCreated"/>
 </form>
