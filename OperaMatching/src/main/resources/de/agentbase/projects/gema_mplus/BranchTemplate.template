@@ -29,30 +29,48 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
-      <string>high_is_equal</string>
-      <list/>
+      <string>high_at_least</string>
+      <list>
+        <null/>
+        <string></string>
+      </list>
     </entry>
     <entry>
-      <string>high_at_least</string>
-      <list/>
+      <string>high_is_equal</string>
+      <list>
+        <string>1</string>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>0</string>
+        <string>0</string>
+      </list>
     </entry>
     <entry>
       <string>medium_is_equal</string>
-      <list/>
+      <list>
+        <string></string>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>branch</string>
-      <list/>
+      <list>
+        <string>EXACT</string>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>medium_at_least</string>
-      <list/>
+      <list>
+        <string></string>
+        <string></string>
+      </list>
     </entry>
   </table>
-  <idCol>3</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>4</idCol>
+  <rowsCount>2</rowsCount>
 </rule>
