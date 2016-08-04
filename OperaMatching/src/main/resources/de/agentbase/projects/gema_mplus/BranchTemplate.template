@@ -34,7 +34,7 @@
         <string>1</string>
         <string></string>
         <string>0</string>
-        <string></string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
@@ -61,16 +61,16 @@
         <null/>
         <string></string>
         <string></string>
-        <string></string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
       <string>branch</string>
       <list>
         <string>EXACT</string>
-        <string>CASE</string>
-        <string>CASE</string>
-        <string></string>
+        <string>CASEMANAGEMENT</string>
+        <string>CASEMANAGEMENT</string>
+        <string>CREATION</string>
       </list>
     </entry>
     <entry>
