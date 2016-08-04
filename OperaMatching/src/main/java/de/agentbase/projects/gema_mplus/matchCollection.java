@@ -7,81 +7,116 @@ import java.util.ArrayList;
  * $HASH(82b97aaa49c8a26cb405ac831f2dd21a)
  */
 @org.kie.api.definition.type.Label("MatchCollection")
-public class matchCollection extends java.lang.Object implements java.io.Serializable {
+public class matchCollection extends java.lang.Object implements java.io.Serializable
+{
 
-	static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-	private match matchToAdd;
-	private boolean stopAdding;
+   private match matchToAdd;
+   private boolean stopAdding;
 
-	private java.lang.String name;
+   private java.lang.String name;
 
-	@org.kie.api.definition.type.Label("Match")
-	@org.kie.api.definition.type.Position(0)
-	private java.util.List<de.agentbase.projects.gema_mplus.match> match;
+   @org.kie.api.definition.type.Label("Match")
+   @org.kie.api.definition.type.Position(0)
+   private java.util.List<de.agentbase.projects.gema_mplus.match> match;
 
-	private java.util.List<de.agentbase.projects.gema_mplus.match> list;
+   private java.util.List<de.agentbase.projects.gema_mplus.match> list;
 
-	public matchCollection() {
-	}
+   @org.kie.api.definition.type.Label(value = "zur\u00FCckgelieferte Matches")
+   private java.util.List<de.agentbase.projects.gema_mplus.match> returnedMatches;
 
-	public matchCollection(String name) {
-		list = new ArrayList<de.agentbase.projects.gema_mplus.match>();
-		this.name = name;
-	}
+   public matchCollection()
+   {
+   }
 
-	public match getMatchToAdd() {
-		return matchToAdd;
-	}
+   public matchCollection(String name)
+   {
+      list = new ArrayList<de.agentbase.projects.gema_mplus.match>();
+      this.name = name;
+   }
 
-	public void setMatchToAdd(match matchToAdd) {
-		list.add(matchToAdd);
-		this.matchToAdd = matchToAdd;
-	}
+   public match getMatchToAdd()
+   {
+      return matchToAdd;
+   }
 
-	public boolean isStopAdding() {
-		return stopAdding;
-	}
+   public void setMatchToAdd(match matchToAdd)
+   {
+      list.add(matchToAdd);
+      this.matchToAdd = matchToAdd;
+   }
 
-	public void setStopAdding(boolean stopAdding) {
-		this.stopAdding = stopAdding;
-	}
+   public boolean isStopAdding()
+   {
+      return stopAdding;
+   }
 
-	public java.lang.String getName() {
-		return this.name;
-	}
+   public void setStopAdding(boolean stopAdding)
+   {
+      this.stopAdding = stopAdding;
+   }
 
-	public void setName(java.lang.String name) {
-		this.name = name;
-	}
+   public java.lang.String getName()
+   {
+      return this.name;
+   }
 
-	public java.util.List<de.agentbase.projects.gema_mplus.match> getMatch() {
-		return this.match;
-	}
+   public void setName(java.lang.String name)
+   {
+      this.name = name;
+   }
 
-	public void setMatch(java.util.List<de.agentbase.projects.gema_mplus.match> match) {
-		this.match = match;
-	}
+   public java.util.List<de.agentbase.projects.gema_mplus.match> getMatch()
+   {
+      return this.match;
+   }
 
-	public java.util.List<de.agentbase.projects.gema_mplus.match> getList() {
-		return this.list;
-	}
+   public void setMatch(java.util.List<de.agentbase.projects.gema_mplus.match> match)
+   {
+      this.match = match;
+   }
 
-	public void setList(java.util.List<de.agentbase.projects.gema_mplus.match> list) {
-		this.list = list;
-	}
+   public java.util.List<de.agentbase.projects.gema_mplus.match> getList()
+   {
+      return this.list;
+   }
 
-	public matchCollection(de.agentbase.projects.gema_mplus.match matchToAdd, boolean stopAdding, java.lang.String name,
-			java.util.List<de.agentbase.projects.gema_mplus.match> match,
-			java.util.List<de.agentbase.projects.gema_mplus.match> list) {
-		this.matchToAdd = matchToAdd;
-		this.stopAdding = stopAdding;
-		this.name = name;
-		this.match = match;
-		this.list = list;
-	}
+   public void setList(java.util.List<de.agentbase.projects.gema_mplus.match> list)
+   {
+      this.list = list;
+   }
 
-	public matchCollection(java.util.List<de.agentbase.projects.gema_mplus.match> match) {
-		this.match = match;
-	}
+   public java.util.List<de.agentbase.projects.gema_mplus.match> getReturnedMatches()
+   {
+      return this.returnedMatches;
+   }
+
+   public void setReturnedMatches(
+         java.util.List<de.agentbase.projects.gema_mplus.match> returnedMatches)
+   {
+      this.returnedMatches = returnedMatches;
+   }
+
+   public matchCollection(
+         de.agentbase.projects.gema_mplus.match matchToAdd,
+         boolean stopAdding,
+         java.lang.String name,
+         java.util.List<de.agentbase.projects.gema_mplus.match> match,
+         java.util.List<de.agentbase.projects.gema_mplus.match> list,
+         java.util.List<de.agentbase.projects.gema_mplus.match> returnedMatches)
+   {
+      this.matchToAdd = matchToAdd;
+      this.stopAdding = stopAdding;
+      this.name = name;
+      this.match = match;
+      this.list = list;
+      this.returnedMatches = returnedMatches;
+   }
+
+   public matchCollection(
+         java.util.List<de.agentbase.projects.gema_mplus.match> match)
+   {
+      this.match = match;
+   }
 }
