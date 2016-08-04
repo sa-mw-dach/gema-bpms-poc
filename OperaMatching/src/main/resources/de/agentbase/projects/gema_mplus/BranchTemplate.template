@@ -23,7 +23,7 @@ matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium_at_least}
     <entry>
       <string>high_at_least</string>
       <list>
-        <string></string>
+        <string>1</string>
       </list>
     </entry>
     <entry>
