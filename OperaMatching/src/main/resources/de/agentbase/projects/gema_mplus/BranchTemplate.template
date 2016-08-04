@@ -5,6 +5,9 @@
   <metadataList/>
   <lhs>
     <freeForm>
+      <text>matchCollection (name == &quot;high&quot; , match.size &gt; @{high_at_least})</text>
+    </freeForm>
+    <freeForm>
       <text>matchCollection (name == &quot;medium&quot; , match.size &gt; @{medium_at_least})</text>
     </freeForm>
   </lhs>
@@ -19,6 +22,10 @@
   <packageName>de.agentbase.projects.gema_mplus</packageName>
   <isNegated>false</isNegated>
   <table>
+    <entry>
+      <string>high_at_least</string>
+      <list/>
+    </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list/>
