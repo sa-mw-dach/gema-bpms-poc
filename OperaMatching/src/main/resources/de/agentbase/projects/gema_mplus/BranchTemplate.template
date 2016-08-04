@@ -32,20 +32,17 @@
       <string>high_at_least</string>
       <list>
         <null/>
-        <string></string>
       </list>
     </entry>
     <entry>
       <string>high_is_equal</string>
       <list>
         <string>1</string>
-        <string></string>
       </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
-        <string>0</string>
         <string>0</string>
       </list>
     </entry>
@@ -53,24 +50,21 @@
       <string>medium_is_equal</string>
       <list>
         <string></string>
-        <string></string>
       </list>
     </entry>
     <entry>
       <string>branch</string>
       <list>
         <string>EXACT</string>
-        <string></string>
       </list>
     </entry>
     <entry>
       <string>medium_at_least</string>
       <list>
         <string></string>
-        <string></string>
       </list>
     </entry>
   </table>
   <idCol>4</idCol>
-  <rowsCount>2</rowsCount>
+  <rowsCount>1</rowsCount>
 </rule>
