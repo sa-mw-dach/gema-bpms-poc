@@ -19,7 +19,9 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
 
    @org.kie.api.definition.type.Label(value = "Match")
    @org.kie.api.definition.type.Position(value = 0)
-   private java.util.List<de.agentbase.projects.gema_mplus.match> matchList;
+   private java.util.List<de.agentbase.projects.gema_mplus.match> match;
+
+   private de.agentbase.projects.gema_mplus.match list;
 
    public matchCollection()
    {
@@ -57,30 +59,42 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
       this.name = name;
    }
 
-   public java.util.List<de.agentbase.projects.gema_mplus.match> getMatchList()
+   public java.util.List<de.agentbase.projects.gema_mplus.match> getMatch()
    {
-      return this.matchList;
+      return this.match;
    }
 
-   public void setMatchList(
-         java.util.List<de.agentbase.projects.gema_mplus.match> matchList)
+   public void setMatch(
+         java.util.List<de.agentbase.projects.gema_mplus.match> match)
    {
-      this.matchList = matchList;
+      this.match = match;
+   }
+
+   public de.agentbase.projects.gema_mplus.match getList()
+   {
+      return this.list;
+   }
+
+   public void setList(de.agentbase.projects.gema_mplus.match list)
+   {
+      this.list = list;
    }
 
    public matchCollection(de.agentbase.projects.gema_mplus.match matchToAdd,
          boolean stopAdding, java.lang.String name,
-         java.util.List<de.agentbase.projects.gema_mplus.match> matchList)
+         java.util.List<de.agentbase.projects.gema_mplus.match> match,
+         de.agentbase.projects.gema_mplus.match list)
    {
       this.matchToAdd = matchToAdd;
       this.stopAdding = stopAdding;
       this.name = name;
-      this.matchList = matchList;
+      this.match = match;
+      this.list = list;
    }
 
    public matchCollection(
-         java.util.List<de.agentbase.projects.gema_mplus.match> matchList)
+         java.util.List<de.agentbase.projects.gema_mplus.match> match)
    {
-      this.matchList = matchList;
+      this.match = match;
    }
 }
