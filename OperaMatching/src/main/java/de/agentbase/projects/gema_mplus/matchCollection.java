@@ -25,7 +25,7 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
 
    public matchCollection()
    {
-      match = new ArrayList<de.agentbase.projects.gema_mplus.match>();
+      list = new ArrayList<de.agentbase.projects.gema_mplus.match>();
    }
 
    public match getMatchToAdd()
@@ -35,7 +35,7 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
 
    public void setMatchToAdd(match matchToAdd)
    {
-      match.add(matchToAdd);
+      list.add(matchToAdd);
       this.matchToAdd = matchToAdd;
    }
 
