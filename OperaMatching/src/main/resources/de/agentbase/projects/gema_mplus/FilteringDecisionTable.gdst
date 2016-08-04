@@ -113,7 +113,7 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>false</hideColumn>
+      <hideColumn>true</hideColumn>
       <width>-1</width>
       <header>add to the collection</header>
       <boundName>$mc</boundName>
@@ -164,7 +164,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>high</valueString>
+        <valueString>high rule</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -210,7 +210,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>medium</valueString>
+        <valueString>medium rule</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
