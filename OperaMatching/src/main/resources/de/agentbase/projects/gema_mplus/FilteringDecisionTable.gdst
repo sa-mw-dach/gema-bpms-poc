@@ -12,19 +12,6 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueNumeric class="int">0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <attribute>salience</attribute>
-      <reverseOrder>false</reverseOrder>
-      <useRowNumber>false</useRowNumber>
-    </attribute-column52>
-    <attribute-column52>
-      <typedDefaultValue>
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -99,18 +86,18 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
-            <valueBoolean>false</valueBoolean>
             <valueString></valueString>
-            <dataType>BOOLEAN</dataType>
+            <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
-          <hideColumn>true</hideColumn>
+          <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>stop adding</header>
+          <header>group name</header>
           <constraintValueType>1</constraintValueType>
-          <factField>stopAdding</factField>
-          <fieldType>Boolean</fieldType>
+          <factField>name</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
+          <valueList>high,medium</valueList>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -126,7 +113,7 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>true</hideColumn>
+      <hideColumn>false</hideColumn>
       <width>-1</width>
       <header>add to the collection</header>
       <boundName>$mc</boundName>
@@ -134,21 +121,6 @@
       <type>match</type>
       <valueList>$m</valueList>
       <update>false</update>
-    </set-field-col52>
-    <set-field-col52>
-      <typedDefaultValue>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
-      <width>102</width>
-      <header>stop adding to the collection after this</header>
-      <boundName>$mc</boundName>
-      <factField>stopAdding</factField>
-      <type>Boolean</type>
-      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
@@ -197,12 +169,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">100</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -226,20 +192,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>high</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>$m</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -253,12 +212,6 @@
       <value>
         <valueString>medium</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">50</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -285,20 +238,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>medium</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>$m</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
