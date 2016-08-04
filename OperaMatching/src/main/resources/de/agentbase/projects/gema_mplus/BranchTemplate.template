@@ -6,6 +6,10 @@
       <attributeName>ruleflow-group</attributeName>
       <value>filter</value>
     </attribute>
+    <attribute>
+      <attributeName>salience</attributeName>
+      <value>-10</value>
+    </attribute>
   </attributes>
   <metadataList/>
   <lhs>
