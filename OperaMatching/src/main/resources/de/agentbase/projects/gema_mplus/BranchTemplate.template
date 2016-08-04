@@ -58,7 +58,7 @@
     <entry>
       <string>medium_is_equal</string>
       <list>
-        <string>0</string>
+        <null/>
         <string></string>
         <string></string>
         <string></string>
@@ -76,7 +76,7 @@
     <entry>
       <string>medium_at_least</string>
       <list>
-        <string>1</string>
+        <null/>
         <string></string>
         <string></string>
         <string></string>
