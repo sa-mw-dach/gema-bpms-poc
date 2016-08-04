@@ -5,13 +5,13 @@
   <metadataList/>
   <lhs>
     <freeForm>
-      <text>matchCollection (name == &quot;high&quot; , list.size &gt; @{high_is_more})</text>
+      <text>matchCollection (name == &quot;high&quot; , list.size &gt;= @{high_at_least})</text>
     </freeForm>
     <freeForm>
       <text>matchCollection (name == &quot;high&quot; , list.size == @{high_is_equal})</text>
     </freeForm>
     <freeForm>
-      <text>matchCollection (name == &quot;medium&quot; , list.size &gt; @{medium_is_more})</text>
+      <text>matchCollection (name == &quot;medium&quot; , list.size &gt;= @{medium_at_least})</text>
     </freeForm>
     <freeForm>
       <text>matchCollection (name == &quot;medium&quot; , list.size == @{medium_is_equal})</text>
@@ -35,15 +35,15 @@
       </list>
     </entry>
     <entry>
-      <string>__ID_KOL_NAME__</string>
+      <string>high_at_least</string>
       <list>
-        <string>0</string>
+        <string></string>
       </list>
     </entry>
     <entry>
-      <string>high_is_more</string>
+      <string>__ID_KOL_NAME__</string>
       <list>
-        <string></string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
@@ -59,7 +59,7 @@
       </list>
     </entry>
     <entry>
-      <string>medium_is_more</string>
+      <string>medium_at_least</string>
       <list>
         <string></string>
       </list>
