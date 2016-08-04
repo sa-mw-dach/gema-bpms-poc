@@ -21,23 +21,17 @@
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list>
-        <string>3</string>
-      </list>
+      <list/>
     </entry>
     <entry>
       <string>branch</string>
-      <list>
-        <string>asa</string>
-      </list>
+      <list/>
     </entry>
     <entry>
       <string>medium_at_least</string>
-      <list>
-        <string></string>
-      </list>
+      <list/>
     </entry>
   </table>
   <idCol>3</idCol>
-  <rowsCount>1</rowsCount>
+  <rowsCount>0</rowsCount>
 </rule>
