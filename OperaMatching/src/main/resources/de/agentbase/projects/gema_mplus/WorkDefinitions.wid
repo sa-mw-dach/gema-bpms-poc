@@ -66,10 +66,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
          "Interface" : new StringDataType(),
          "Operation" : new StringDataType(),
          "Endpoint" : new StringDataType(),
-		 "Title" : new StringDataType(),
-		 "Autor" : new StringDataType(),
-		 "Datum" : new StringDataType(),
-		 "Dauer" : new StringDataType()
+		 "Work" : new ObjectDataType()
     ],
     "results" : [
         "Result" : new ObjectDataType(),
