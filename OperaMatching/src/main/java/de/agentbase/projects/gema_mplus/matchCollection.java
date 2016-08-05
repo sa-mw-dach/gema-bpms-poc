@@ -13,18 +13,9 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
    static final long serialVersionUID = 1L;
 
    private match matchToAdd;
-   private boolean stopAdding;
-
    private java.lang.String name;
 
-   @org.kie.api.definition.type.Label("Match")
-   @org.kie.api.definition.type.Position(0)
-   private java.util.List<de.agentbase.projects.gema_mplus.match> match;
-
    private java.util.List<de.agentbase.projects.gema_mplus.match> list;
-
-   @org.kie.api.definition.type.Label(value = "zur\u00FCckgelieferte Matches")
-   private java.util.List<de.agentbase.projects.gema_mplus.match> returnedMatches;
 
    public matchCollection()
    {
@@ -47,16 +38,6 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
       this.matchToAdd = matchToAdd;
    }
 
-   public boolean isStopAdding()
-   {
-      return stopAdding;
-   }
-
-   public void setStopAdding(boolean stopAdding)
-   {
-      this.stopAdding = stopAdding;
-   }
-
    public java.lang.String getName()
    {
       return this.name;
@@ -65,16 +46,6 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
    public void setName(java.lang.String name)
    {
       this.name = name;
-   }
-
-   public java.util.List<de.agentbase.projects.gema_mplus.match> getMatch()
-   {
-      return this.match;
-   }
-
-   public void setMatch(java.util.List<de.agentbase.projects.gema_mplus.match> match)
-   {
-      this.match = match;
    }
 
    public java.util.List<de.agentbase.projects.gema_mplus.match> getList()
@@ -87,36 +58,12 @@ public class matchCollection extends java.lang.Object implements java.io.Seriali
       this.list = list;
    }
 
-   public java.util.List<de.agentbase.projects.gema_mplus.match> getReturnedMatches()
-   {
-      return this.returnedMatches;
-   }
-
-   public void setReturnedMatches(
-         java.util.List<de.agentbase.projects.gema_mplus.match> returnedMatches)
-   {
-      this.returnedMatches = returnedMatches;
-   }
-
-   public matchCollection(
-         de.agentbase.projects.gema_mplus.match matchToAdd,
-         boolean stopAdding,
+   public matchCollection(de.agentbase.projects.gema_mplus.match matchToAdd,
          java.lang.String name,
-         java.util.List<de.agentbase.projects.gema_mplus.match> match,
-         java.util.List<de.agentbase.projects.gema_mplus.match> list,
-         java.util.List<de.agentbase.projects.gema_mplus.match> returnedMatches)
+         java.util.List<de.agentbase.projects.gema_mplus.match> list)
    {
       this.matchToAdd = matchToAdd;
-      this.stopAdding = stopAdding;
       this.name = name;
-      this.match = match;
       this.list = list;
-      this.returnedMatches = returnedMatches;
-   }
-
-   public matchCollection(
-         java.util.List<de.agentbase.projects.gema_mplus.match> match)
-   {
-      this.match = match;
    }
 }
