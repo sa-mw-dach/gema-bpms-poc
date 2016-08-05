@@ -77,7 +77,7 @@
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="defaultValueFormula" value="={in_WorkIncoming/author}"/>
+<property name="defaultValueFormula" value="=&quot;abcde&quot;"/>
 <property name="inputBinding" value="in_WorkToBeCreated/author"/>
 <property name="outputBinding" value="out_WorkToBeCreated/author"/>
 <property name="fieldClass" value="java.lang.String"/>
