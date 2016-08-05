@@ -32,7 +32,7 @@
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="defaultValueFormula" value="=&quot;Helle Bells&quot;"/>
+<property name="defaultValueFormula" value="=&quot;Hells Bells&quot;"/>
 <property name="outputBinding" value="WorkIncoming/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
