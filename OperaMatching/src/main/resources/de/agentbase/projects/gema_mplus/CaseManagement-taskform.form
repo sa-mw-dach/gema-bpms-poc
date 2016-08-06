@@ -132,7 +132,7 @@
 <field position="13" name="MatchCollectionResult_list" bag-type="de.agentbase.projects.gema_mplus.match" type="MultipleSubform" id="740163597">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
@@ -149,8 +149,40 @@
 <property name="visualizeItems" value="false"/>
 <property name="hideCreateItem" value="true"/>
 <property name="expanded" value="false"/>
-<property name="enableTableEnterData" value="false"/>
+<property name="enableTableEnterData" value="true"/>
 <property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="14" name=":decorator_7" type="HTMLLabel" id="1144969403">
+<property name="fieldRequired" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;dequot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;enquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;esquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;frquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;jaquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;ptquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;quot;zhquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt; quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<field position="15" name="MatchToBeCreated_opusID" type="InputText" id="322804561">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Werk IDquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_MatchToBeCreated/opusID"/>
+<property name="outputBinding" value="out_MatchToBeCreated/opusID"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="16" name="MatchToBeCreated_title" type="InputText" id="1270735771">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Titelquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_MatchToBeCreated/title"/>
+<property name="outputBinding" value="out_MatchToBeCreated/title"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="17" name=":decorator_6" type="Separator" id="130686834">
 <property name="fieldRequired" value="false"/>
@@ -178,46 +210,6 @@
 <property name="inputBinding" value="in_CaseDecision"/>
 <property name="outputBinding" value="out_CaseDecision"/>
 <property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="15" name="MatchToBeCreated_opusID" type="InputText" id="322804561">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Werk IDquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="in_MatchToBeCreated/opusID"/>
-<property name="outputBinding" value="out_MatchToBeCreated/opusID"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="16" name="MatchToBeCreated_title" type="InputText" id="1270735771">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Titelquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="in_MatchToBeCreated/title"/>
-<property name="outputBinding" value="out_MatchToBeCreated/title"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="14" name=":decorator_7" type="HTMLLabel" id="1144969403">
-<property name="fieldRequired" value="false"/>
-<property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;dequot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;enquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;esquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;frquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;jaquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;ptquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;quot;zhquot;,quot;&lt;p&gt;&lt;strong&gt;Match zu erstellen&lt;/strong&gt;&lt;/p&gt;
-quot;"/>
-<property name="fieldClass" value="HTMLlabel"/>
 </field>
 <dataHolder inputId="in_CaseDecision" name="#A7E690" type="basicType" outId="out_CaseDecision" value="java.lang.String" id="CaseDecision"/>
 <dataHolder inputId="in_MatchCollectionResult" name="#E9E371" type="dataModelerEntry" outId="out_MatchCollectionResult" value="de.agentbase.projects.gema_mplus.matchCollection" id="MatchCollectionResult"/>
