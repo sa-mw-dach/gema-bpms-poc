@@ -1,8 +1,77 @@
 
 <form id="1033513025">
 <property name="name" value="CreateWork-taskform.form"/>
-<property name="displayMode" value="default"/>
+<property name="displayMode" value="template"/>
+<property name="labelMode" value="undefined"/>
 <property name="status" value="0"/>
+<property name="formTemplate" value="&lt;div style=&quot;color:#2f3234;display:block&quot;&gt;
+&lt;div style=&quot;background-color:#c8ccd2;padding:10px;vertical-align:middle;&quot;&gt;
+&lt;h2 style=&quot;margin:0px;display:inline;&quot;&gt;Genehmigung Anlage neues Werk&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;fieldset style=&quot;-webkit-margin-start:0px;margin-top:20px;margin-bottom:20px;&quot;&gt;&lt;legend&gt;Eingehende Nutzungsmeldung&lt;/legend&gt;
+
+&lt;table&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkIncoming_author}&lt;/td&gt;
+			&lt;td&gt;$field{WorkIncoming_author}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkIncoming_title}&lt;/td&gt;
+			&lt;td&gt;$field{WorkIncoming_title}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkIncoming_duration}&lt;/td&gt;
+			&lt;td&gt;$field{WorkIncoming_duration}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkIncoming_date}&lt;/td&gt;
+			&lt;td&gt;$field{WorkIncoming_date}&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/fieldset&gt;
+
+&lt;fieldset style=&quot;-webkit-margin-start:0px;margin-top:20px;margin-bottom:20px;&quot;&gt;&lt;legend&gt;Anlage neues Werk&lt;/legend&gt;
+
+&lt;table&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkToBeCreated_author}&lt;/td&gt;
+			&lt;td&gt;$field{WorkToBeCreated_author}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkToBeCreated_title}&lt;/td&gt;
+			&lt;td&gt;$field{WorkToBeCreated_title}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkToBeCreated_duration}&lt;/td&gt;
+			&lt;td&gt;$field{WorkToBeCreated_duration}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;$label{WorkToBeCreated_date}&lt;/td&gt;
+			&lt;td&gt;$field{WorkToBeCreated_date}&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/fieldset&gt;
+
+&lt;fieldset style=&quot;-webkit-margin-start:0px;margin-top:20px;&quot;&gt;&lt;legend&gt;Prozesssteuerung&lt;/legend&gt;
+
+&lt;table&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;padding:4px;&quot;&gt;$label{CreateDecision}&lt;/td&gt;
+			&lt;td style=&quot;padding:4px;&quot;&gt;$field{CreateDecision}&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+"/>
 <field position="0" name=":decorator_0" type="HTMLLabel" id="1096738003">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
@@ -34,16 +103,6 @@
 <property name="inputBinding" value="in_WorkIncoming/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="WorkIncoming_date" type="InputShortDate" id="1784684149">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Datumquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="inputBinding" value="in_WorkIncoming/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
 <field position="3" name="WorkIncoming_duration" type="InputTextInteger" id="2014154702">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
@@ -53,6 +112,16 @@
 <property name="readonly" value="true"/>
 <property name="inputBinding" value="in_WorkIncoming/duration"/>
 <property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="4" name="WorkIncoming_date" type="InputShortDate" id="1784684149">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Datumquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="inputBinding" value="in_WorkIncoming/date"/>
+<property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="5" name=":decorator_1" type="Separator" id="1739508220">
 <property name="fieldRequired" value="false"/>
@@ -88,16 +157,6 @@
 <property name="inputBinding" value="in_WorkToBeCreated/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="10" name="WorkToBeCreated_date" type="InputShortDate" id="613493059">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Datumquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="inputBinding" value="in_WorkToBeCreated/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
 <field position="9" name="WorkToBeCreated_duration" type="InputTextInteger" id="1696862110">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
@@ -107,6 +166,16 @@
 <property name="readonly" value="true"/>
 <property name="inputBinding" value="in_WorkToBeCreated/duration"/>
 <property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="10" name="WorkToBeCreated_date" type="InputShortDate" id="613493059">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Datumquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="inputBinding" value="in_WorkToBeCreated/date"/>
+<property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="11" name=":decorator_3" type="Separator" id="2041717575">
 <property name="fieldRequired" value="false"/>
