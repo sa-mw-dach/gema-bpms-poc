@@ -138,9 +138,9 @@
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_MatchCollectionResult/list"/>
 <property name="outputBinding" value="out_MatchCollectionResult/list"/>
-<property name="defaultSubform" value="MatchLine.form"/>
-<property name="previewSubform" value="MatchLine.form"/>
-<property name="tableSubform" value="MatchLine.form"/>
+<property name="defaultSubform" value="MatchTableLine.form"/>
+<property name="previewSubform" value="MatchTableLine.form"/>
+<property name="tableSubform" value="MatchTableLine.form"/>
 <property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -179,7 +179,7 @@
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="in_CaseDecision" name="#A7E690" type="basicType" outId="out_CaseDecision" value="java.lang.String" id="CaseDecision"/>
-<dataHolder inputId="in_MatchCollectionResult" name="#E9E371" type="dataModelerEntry" outId="out_MatchCollectionResult" value="de.agentbase.projects.gema_mplus.matchCollection" id="MatchCollectionResult"/>
-<dataHolder inputId="in_WorkForRematch" name="#0000A0" type="dataModelerEntry" outId="out_WorkForRematch" value="de.agentbase.projects.gema_mplus.work" id="WorkForRematch"/>
-<dataHolder inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
+<dataHolder supportedType="className" inputId="in_MatchCollectionResult" name="#E9E371" type="dataModelerEntry" outId="out_MatchCollectionResult" value="de.agentbase.projects.gema_mplus.matchCollection" id="MatchCollectionResult"/>
+<dataHolder supportedType="className" inputId="in_WorkForRematch" name="#0000A0" type="dataModelerEntry" outId="out_WorkForRematch" value="de.agentbase.projects.gema_mplus.work" id="WorkForRematch"/>
+<dataHolder supportedType="className" inputId="in_WorkIncoming" name="#FF54A7" type="dataModelerEntry" outId="out_WorkIncoming" value="de.agentbase.projects.gema_mplus.work" id="WorkIncoming"/>
 </form>
