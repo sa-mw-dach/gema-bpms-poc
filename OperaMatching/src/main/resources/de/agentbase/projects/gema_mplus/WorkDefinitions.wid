@@ -68,7 +68,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "results" : [
         "Result" : new ObjectDataType(),
     ],
-    "displayName" : "REST",
+    "displayName" : "DB Insert",
     "icon" : "icons/db_insert.png"
   ]
 
