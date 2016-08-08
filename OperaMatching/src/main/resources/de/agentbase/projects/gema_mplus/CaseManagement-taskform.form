@@ -126,7 +126,15 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;dequot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;enquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;esquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;frquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;jaquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;ptquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;quot;zhquot;,quot;&lt;h2&gt;Matchliste&lt;/h2&gt; quot;"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;dequot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;enquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;esquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;frquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;jaquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;ptquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;quot;zhquot;,quot;&lt;h2&gt;Liste der Matches&lt;/h2&gt;
+quot;"/>
 <property name="fieldClass" value="HTMLlabel"/>
 </field>
 <field position="14" name=":decorator_6" type="Separator" id="130686834">
