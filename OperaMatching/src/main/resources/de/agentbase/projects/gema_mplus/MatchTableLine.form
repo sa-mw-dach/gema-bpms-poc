@@ -8,8 +8,8 @@
 	&lt;tbody&gt;
 		&lt;tr&gt;
 			&lt;td&gt;$label{list_selected}&lt;/td&gt;
-			&lt;td&gt;$label{list_author}&lt;/td&gt;
 			&lt;td&gt;$label{list_title}&lt;/td&gt;
+			&lt;td&gt;$label{list_author}&lt;/td&gt;
 			&lt;td&gt;$label{list_duration}&lt;/td&gt;
 			&lt;td&gt;$label{list_relevance}&lt;/td&gt;
 			&lt;td&gt;$label{list_date}&lt;/td&gt;
@@ -17,8 +17,8 @@
 		&lt;/tr&gt;
 		&lt;tr&gt;
 			&lt;td&gt;$field{list_selected}&lt;/td&gt;
-			&lt;td&gt;$field{list_author}&lt;/td&gt;
 			&lt;td&gt;$field{list_title}&lt;/td&gt;
+			&lt;td&gt;$field{list_author}&lt;/td&gt;
 			&lt;td&gt;$field{list_duration}&lt;/td&gt;
 			&lt;td&gt;$field{list_relevance}&lt;/td&gt;
 			&lt;td&gt;$field{list_date}&lt;/td&gt;
