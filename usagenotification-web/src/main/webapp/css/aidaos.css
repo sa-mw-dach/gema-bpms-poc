@@ -1,0 +1,185 @@
+@CHARSET "ISO-8859-1";
+
+
+/* ---------- Allgemeine Styles ---------- */
+
+html, body, div, ul, li, form, a, p {margin: 0px; padding: 0px}
+html, body {background-color: #F3F3F3; font-family: Arial,sans-serif}
+#outer {margin: 0px auto 20px auto; padding: 0px 3px 3px 3px; width: 970px; background-color: #dedede}
+#inner {border: 1px solid #999999; border-top: none; background-color: #ffffff; min-height: 800px; height: auto !important; height: 800px;}
+.clear {clear: both}
+
+
+
+/* ---------- Bereich für den Header ---------- */
+
+#header {background: url(../images/header_wide.jpg) no-repeat}
+#headMenue {margin-left: 40px; height: 30px}
+#headNav {list-style: none; margin: 0px; padding: 0px}
+#headNav li {font-size: 12pt; float: left; margin: 0px; padding: 0px; list-style: none}
+#headNav li a {float: left; padding: 2px 15px 2px 0px; color: #ffffff; text-decoration: none}
+#headNav li a:hover {text-decoration: underline}
+#headline {font-size: 30px;	font-weight: bold; color: #bbbbbb; margin-top: 70px; padding-left: 40px; text-align: left}
+
+
+
+/* ---------- Bereich für das Menü ---------- */
+.listeIE {margin-left: 13px}
+ul, li {list-style-type: square; list-style-position: inside; border: none;}
+#login {z-index: 5; height: 14px; position: relative; top: 31px; padding-top: 4px; padding-bottom: 2px; padding-left: 794px; padding-right: 15px; background-color: #eeeeee; font-size: 8pt; color: #cc0000}
+#login img {margin-right: 5px}
+#cart {font-size: 8pt; color: #666; padding-left: 794px; margin-top: 38px}
+#cart img {margin-right: 8px}
+#cart a {text-decoration: none; color: #666}
+#cart a:hover {text-decoration: none; color: #cc0000}
+a.loginLink {text-decoration: none; color: #666666}
+a:hover.loginLink {text-decoration: none; color: #cc0000}
+#menue {color: #666666;	margin-top: 20px; border: none; margin-bottom: 20px}
+
+#mainMenue {z-index: 6; position: relative; padding-left: 40px; height: 40px; text-align: left; float: left; background-color: #ffffff}
+#nav {list-style: none; margin: 0px; padding: 0px}
+#nav ul {margin: 0px; padding: 0px}
+#nav li {font-size: 12pt; float: left; margin: 0px; padding: 0px; padding-top: 11px; background: url("../images/navli.gif") repeat-y; list-style: none}
+#nav li a {height: 17px; width: 120px; float: left; padding: 3px 0 0 11px; background: #eee; color: #666; text-decoration: none}
+#nav li.active a, #nav li a:hover {background: #cc0000; color: #fff}
+#nav li img {border: none; margin-left: 15px; margin-right: 5px; float: left; background-color: #eee; margin-top: 5px}
+
+#tarifHeadline {margin-left: 40px; font-weight: bold; font-size: 10pt; margin-top: 35px}
+#subMenue {margin-left: 40px; height: 30px; margin-top: 5px}
+#subMenue img {margin-right: 5px}
+
+.inactivePart {font-size: 11pt; color: #bbbbbb; margin-right:15px}
+.activePart {font-weight: bold; font-size: 11pt; color:#cc0000; margin-right:15px}
+
+
+
+
+/* ---------- Bereich für den Content ---------- */
+#content {margin: 20px 40px; padding-top: 20px; vertical-align: top; font-size: 14px}
+#content .headline {padding: 2px 5px; background-color: #eeeeee; font-weight: bold; width: 750px}
+#content .subHeadline {margin-top: 20px; padding: 2px 5px; background-color: #eeeeee; font-weight: bold; width: 750px; font-size: 9pt}
+#content .body {padding: 15px 5px; background-color: #eeeeee; width: 750px; margin-top: 2px; font-size: 9pt}
+#content .subBody {padding: 5px; background-color: #eeeeee; width: 750px; margin-top: 2px; font-size: 9pt}
+#content .hinweis {padding: 5px 0 0 0; background-color: #eeeeee; width: 750px; margin-top: 2px; font-size: 9pt}
+#content .footer {padding: 8px 5px; background-color: #eeeeee; width: 750px; margin-top: 2px; font-size: 9pt}
+.textFooter {font-size: 10px; margin: 25px 10px 10px 12px}
+#teaserText {line-height: 15px}
+#teaserList {margin-top: 20px}
+#teaserList li {list-style-type: decimal; margin: 10px 0}
+
+#error {width: 345px; color: #cc0000; font-size: 13px; padding: 10px; margin: 100px 280px; border: 1px solid #cc0000}
+.iconPos {text-decoration: none; border: none}
+.printHeadline {font-weight: bold}
+.headlineFirst {float: left; width: 91%}
+.headlineSecond {padding-top: 3px}
+a.druck, a:visited.druck {text-decoration: none; color: #000000}
+a:hover.druck {color: #cc0000}
+
+.buttonRight {float: right; margin-right: 10px}
+
+.showError {color: #cc0000; font-size: 13px; margin: 2px 40px}
+.showHinweis {color: #228b22; font-size: 13px; margin: 2px 40px}
+.tarifDrucken {font-size: 12px; margin: 20px 40px;}
+.tarifDruckColumn1 {width: 130px}
+.tarifDruckHeaderLeft {text-align: left; padding: 5px 10px}
+.tarifDruckHeaderRight {text-align: right; padding: 5px 4px}
+.tarifDruckColumn2 {width: 180px}
+.tarifDruckColumn3 {width: 80px}
+
+#sonstigeLizenz {margin-left: 15px; font-size: 13px}
+#sonstigeLizenz span {margin-left: 13px}
+#sonstigeLizenz li {padding: 2px 0px;}
+.hinweis {margin: 12px 0px}
+.mitteilungen {width:100%; border: 1px solid #bbbbbb; height: 160px; padding: 3px}
+
+.panelOuter {border-left: 1px solid #C4C0C9; border-top: 1px solid #C4C0C9; background-color: #ffffff; font-size: 11px}
+.gridHeader {text-align: left; background-color: #F1EEE9; font-size: 11px; padding: 4px 10px; border-right: 1px solid #C4C0C9; border-bottom: 1px solid #C4C0C9}
+.gridColumn {border-right: 1px solid #C4C0C9; border-bottom: 1px solid #C4C0C9; padding: 4px 10px}
+.gridColumn2 {border-right: 1px solid #C4C0C9; border-bottom: 1px solid #C4C0C9; padding: 4px 10px; text-align: right}
+.gridColumn3 {border-right: 1px solid #C4C0C9; border-bottom: 1px solid #C4C0C9; padding: 4px 4px}
+
+.dancefloorCol1 {width: 230px; word-wrap: break-word;}
+
+.checkoutBtnCol1 {vertical-align: top;}
+.checkoutBtnCol2 {padding-top: 4px;}
+
+.textTop {vertical-align:text-top;}
+.noBorder {border: none}
+.position {position: relative; top: 4px}
+.anmelden td {padding: 12px 0px 5px 0px}
+
+#inputError {border-style:solid; border-color:red; border-width: 1px;}
+
+ol li {list-style-type: decimal; list-style-position: inside; border: none; padding: 2px;}
+
+.radioBlock{
+	padding: 0px;
+	border: none;
+}
+.radioBlock input {
+display:block;
+float:left;
+}
+.radioBlock label {
+display:block;
+margin-top:3px;
+margin-left:23px;
+}
+
+
+/* ---------- Bereich für RichFaces Komponenten ---------- */
+
+.tarifFirst {width: 280px}
+.tarifSecond {width: 180px}
+.tarifThird {width: 90px}
+#kundenStatus {margin-top: 20px}
+#kundenStatus .neuerKunde {margin-left: 10px}
+.tableRight {text-align: right}
+
+#pflichtfeld {width:100%; display:block; text-align:left;font-size:11px; margin-top:15px}
+#formHeader {background-color: #eeeeee; margin-bottom: 2px; padding: 2px 5px; font-weight: bold}
+#formContent {background-color: #eeeeee; padding: 20px}
+#formFooter {background-color: #eeeeee; margin-top: 2px; padding: 4px 10px}
+.tableLayout, .tableTarif {margin-top: 10px; border: 1px solid #bbbbbb}
+.tableTarifHeader {text-align: left; padding-left: 10px}
+.tableTarifColumns {padding: 5px 10px}
+.kundeFirst, .tarifFirst {padding-left: 10px; width: 50px; overflow: auto}
+.kundeSecond, .tarifSecond {padding-right: 10px; width: 200px}
+
+#toggleRechnungsadresse {margin-top: 10px}
+#toggleGsvt {margin-top: 10px}
+
+.newTarif {margin-top: 5px}
+
+
+
+/* +++++ RichFaces: Styles für den Kalender +++++ */
+
+.cal-button {border: 1px solid #999999}
+.rich-calendar-month, .rich-calendar-tool,
+.rich-calendar-today, .rich-calendar-editor-btn-selected {color: #ffffff; background: #cc0000}
+.rich-calendar-toolfooter, .rich-calendar-days, .rich-calendar-date-layout-ok, .rich-calendar-date-layout-cancel {background-color: #d0d0d0; color: #000000}
+.rich-calendar-week {background-color: #c0c0c0}
+.rich-calendar-holly {background-color: #f3f3f3; color: #cc0000}
+.rich-calendar-boundary-dates {color: #a0a0a0}
+.rich-calendar-tool-btn {padding: 1px}
+.rich-calendar-tool-btn-hover {border: none; background-color: transparent; padding: 1px}
+
+
+
+/* ---------- Tooltip ---------- */
+
+.tooltip {
+    background-color: #eeeeee;
+    border-width:1px;
+    padding:10px;
+}
+.tooltipData {
+    font-weight: bold;
+}
+
+
+
+/* ---------- Bereich für den Footer ---------- */
+
+#footer {margin: 25px 60px; text-align: right; text-align: left}
