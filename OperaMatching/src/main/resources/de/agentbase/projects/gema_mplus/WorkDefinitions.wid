@@ -56,23 +56,6 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "REST",
     "icon" : "defaultservicenodeicon.png"
-  ],
-  
-  [
-    "name" : "WSDLMatchHandler",
-    "parameters" : [
-        "Url" : new StringDataType(),
-         "Namespace" : new StringDataType(),
-         "Interface" : new StringDataType(),
-         "Operation" : new StringDataType(),
-         "Endpoint" : new StringDataType(),
-		 "Work" : new ObjectDataType()
-    ],
-    "results" : [
-        "Result" : new ObjectDataType(),
-    ],
-    "displayName" : "Custom WS",
-    "icon" : "defaultservicenodeicon.png"
   ]
 
 ]
