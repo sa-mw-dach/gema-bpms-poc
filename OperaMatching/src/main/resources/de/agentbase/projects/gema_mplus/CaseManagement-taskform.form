@@ -138,9 +138,9 @@
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_MatchCollectionResult/list"/>
 <property name="outputBinding" value="out_MatchCollectionResult/list"/>
-<property name="defaultSubform" value="MatchLine.form"/>
-<property name="previewSubform" value="MatchLine.form"/>
-<property name="tableSubform" value="MatchLine.form"/>
+<property name="defaultSubform" value="MatchTableLine.form"/>
+<property name="previewSubform" value="MatchTableLine.form"/>
+<property name="tableSubform" value="MatchTableLine.form"/>
 <property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
