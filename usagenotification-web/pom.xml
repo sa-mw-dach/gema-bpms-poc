@@ -23,10 +23,10 @@
     <artifactId>usagenotification-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>WildFly Quickstarts: usagenotification-web</name>
-    <description>A starter Java EE 7 webapp project for use on JBoss WildFly / WildFly, generated from the jboss-javaee6-webapp archetype</description>
+    <name>GEMA BPMS PoC usagenotification-web</name>
+    <description>A Java EE 6 webapp project for use on JBoss EAP 6.4, generated from the jboss-javaee6-webapp archetype</description>
 
-    <url>http://wildfly.org</url>
+    <url>http://redhat.com</url>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -56,11 +56,10 @@
         <version.war.plugin>2.5</version.war.plugin>
 
         <!-- maven-compiler-plugin -->
-        <maven.compiler.target>1.7</maven.compiler.target>
-        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
-
-
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -115,11 +114,52 @@
             <artifactId>jboss-jaxrs-api_1.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-
+        
+        <dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-api</artifactId>
+        	<version>1.7.2.redhat-3</version>
+        	<scope>provided</scope>
+        </dependency>
+       
         <dependency>
             <groupId>org.kie.remote</groupId>
             <artifactId>kie-remote-client</artifactId>
-        </dependency>
+            <exclusions>
+            	<exclusion>
+            		<groupId>org.apache.cxf</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.hornetq</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.jboss.spec.javax.jms</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.jboss.spec.javax.xml.ws</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.jboss.resteasy</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.codehaus.jackson</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>org.slf4j</groupId>
+        			<artifactId>slf4j-api</artifactId>
+            	</exclusion>
+            	<exclusion>
+            		<groupId>com.sun.xml.bind</groupId>
+            		<artifactId>*</artifactId>
+            	</exclusion>
+            </exclusions>
+        </dependency>        
     </dependencies>
 
     <build>
