@@ -40,6 +40,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new de.agentbase.gema.workitems.handler.CreationWorkItemHandler()</identifier>
+            <parameters/>
+            <name>DBInsert</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
