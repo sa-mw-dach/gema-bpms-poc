@@ -1,13 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-    <title>Nutzungsmeldung Online</title>
-    <meta http-equiv="expires" content="0"/>
-    <meta http-equiv="cache-control" content="no-cache"/>
-    <link rel="stylesheet" type="text/css" href="css/aidaos.css" media="screen, projection"/>
-    <script type="text/javascript" src="js/angular-1.5.8.min.js"></script>
-    <script>
+<head>
+<meta http-equiv="content-type"
+	content="text/html; charset=windows-1252" />
+<title>Nutzungsmeldung Online</title>
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<link rel="stylesheet" href="css/bootstrap-3.3.7.min.css" />
+<style type="text/css">
+body {
+	background: url(images/header_wide.jpg) no-repeat
+}
+</style>
+<script type="text/javascript" src="js/angular-1.5.8.min.js"></script>
+<script>
 var notificationUsageApp = angular.module("notificationUsageApp", []);
 
 notificationUsageApp.controller("notificationUsage", ['$scope', '$http', function($scope, $http) {
@@ -23,9 +29,11 @@ notificationUsageApp.controller("notificationUsage", ['$scope', '$http', functio
 		var res = $http.post('/usagenotification/rest/report', dataObj);
 		res.success(function(data, status, headers, config) {
 			$scope.message = data;
+			$scope.showMessage = 'true';
 		});
 		res.error(function(data, status, headers, config) {
 			$scope.message = "Ein Fehler ist aufgetreten: " + JSON.stringify({data: data});
+			$scope.showMessage = 'true';
 		});		
 		// Making the fields empty
 		//
@@ -36,46 +44,50 @@ notificationUsageApp.controller("notificationUsage", ['$scope', '$http', functio
 	};
 }]);
 </script>
-  </head>
-  <body ng-app="notificationUsageApp" ng-controller="notificationUsage">
-    <div id="outer">
-      <div id="inner">
-        <div id="header">
-          <div id="headMenue"></div>
-          <div id="headline">Nutzungsmeldung Online</div>
-        </div>
-        <form id="usageNotificationForm" name="usageNotificationForm" ng-submit="submitForm()">
-          <div id="content">
-            <div class="headline">Ich m&ouml;chte folgende Werknutzung melden</div>
-            <div class="body">
-              <table id="werk" border="0">
-                <tbody>
-                  <tr>
-                    <td><label>Autor</label></td><td><input name="author" id="author" ng-model="author" title="Autor" type="text"/></td>
-                  </tr>
-                  <tr>
-                    <td><label>Titel</label></td><td><input name="title" id="title" ng-model="title" title="Titel" type="text"/></td>
-                  </tr>
-                  <tr>
-                    <td><label>Datum</label></td><td><input name="date" id="date" ng-model="date" title="Datum" type="text"/></td>
-                  </tr>
-                  <tr>
-                    <td><label>Dauer</label></td><td><input name="duration" id="duration" ng-model="duration" title="Dauer" type="text"/></td>
-                  </tr>
-                  <tr>
-					<td colspan="2" style="width:100%;padding:10px;">					
-					  <div class="alert alert-info" role="alert">{{message}}</div>
-					</td>
-				  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="footer">
-              <img alt="" class="rich-spacer " src="images/spacer.gif" height="18px" width="1"/><input id="report" src="images/button_weiter.png" name="report" style="margin-left:5px" class="buttonRight" type="image"/>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
+</head>
+<body ng-app="notificationUsageApp" ng-controller="notificationUsage">
+	<h1 style="color: white">Werksnutzung Online</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<h3>Ich m&ouml;chte folgende Werksnutzung melden</h3>
+			<form class="form-horizontal" id="usageNotificationForm"
+				name="usageNotificationForm" ng-submit="submitForm()">
+				<div class="form-group">
+					<label for="author" class="col-md-1 control-label">Autor</label>
+					<div class="col-md-3">
+						<input type="text" class="form-control" id="author"
+							placeholder="Autor">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="title" class="col-md-1 control-label">Titel</label>
+					<div class="col-md-3">
+						<input type="text" class="form-control" id="title"
+							placeholder="Titel">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="date" class="col-md-1 control-label">Datum</label>
+					<div class="col-md-3">
+						<input type="date" class="form-control" id="date"
+							placeholder="Datum">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="duration" class="col-md-1 control-label">Dauer</label>
+					<div class="col-md-3">
+						<input type="text" class="form-control" id="duration"
+							placeholder="Dauer">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-offset-3 col-md-1">
+						<button class="btn btn-primary btn-block" type="submit">Absenden</button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="alert alert-info" role="alert" ng-show="showMessage">{{message}}</div>
+				</div>
+			</form>
+</body>
 </html>
