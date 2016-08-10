@@ -69,19 +69,5 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "GEMA_MATCHSERVICE",
     "icon" : "defaultservicenodeicon.png"
-  ],
-  
-  [
-      "name": "DBInsert",
-      "parameters": [
-          "jndi": new StringDataType(),
-          "sqlStatement": new StringDataType(),
-          "params": new StringDataType()
-      ],
-      "results": [
-          "Result": new ObjectDataType(),
-      ],
-      "displayName": "DB Insert",
-      "icon": "insert_db.png"
   ]
 ]
