@@ -54,28 +54,28 @@ notificationUsageApp.controller("notificationUsage", ['$scope', '$http', functio
 				<div class="form-group">
 					<label for="author" class="col-md-1 control-label">Autor</label>
 					<div class="col-md-3">
-						<input type="text" class="form-control" id="author"
+						<input type="text" name="author" class="form-control" id="author"
 							placeholder="Autor" ng-model="author"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="title" class="col-md-1 control-label">Titel</label>
 					<div class="col-md-3">
-						<input type="text" class="form-control" id="title"
+						<input type="text" name="title" class="form-control" id="title"
 							placeholder="Titel" ng-model="title"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="date" class="col-md-1 control-label">Datum</label>
 					<div class="col-md-3">
-						<input type="date" class="form-control" id="date"
-							placeholder="Datum" ng-model="date"/>
+						<input type="text" name="date" class="form-control" id="date"
+							placeholder="Datum (JJJJ-MM-TT)" ng-model="date"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="duration" class="col-md-1 control-label">Dauer</label>
 					<div class="col-md-3">
-						<input type="text" class="form-control" id="duration"
+						<input type="text" name="duration" class="form-control" id="duration"
 							placeholder="Dauer" ng-model="duration"/>
 					</div>
 				</div>
