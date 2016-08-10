@@ -50,7 +50,7 @@ public class UsageNotificationRESTService {
 	
 	public UsageNotificationRESTService() throws MalformedURLException {
 		String deploymentId = System.getProperty("com.redhat.gema.mplus.usagenotification.deploymentId",
-				"gema:MPlusMatching:1.0-SNAPSHOT");
+				"gema:MPlusMatching:Master-SNAPSHOT");
 		String deploymentUrl = System.getProperty("com.redhat.gema.mplus.usagenotification.deploymentUrl",
 				"http://209.132.178.154:8080/business-central/");
 		String user = System.getProperty("com.redhat.gema.mplus.usagenotification.user", "GEMA1");
