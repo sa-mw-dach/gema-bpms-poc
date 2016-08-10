@@ -26,12 +26,12 @@ notificationUsageApp.controller("notificationUsage", ['$scope', '$http', functio
 				date : $scope.date,
 				duration: $scope.duration
 		};	
-		var res = $http.post('/usagenotification/rest/report', dataObj);
-		res.success(function(data, status, headers, config) {
+		$http.post('/usagenotification/rest/report', dataObj)
+		.success(function(data, status, headers, config) {
 			$scope.message = data;
 			$scope.showMessage = 'true';
-		});
-		res.error(function(data, status, headers, config) {
+		})
+		.error(function(data, status, headers, config) {
 			$scope.message = "Ein Fehler ist aufgetreten: " + JSON.stringify({data: data});
 			$scope.showMessage = 'true';
 		});		
@@ -50,8 +50,7 @@ notificationUsageApp.controller("notificationUsage", ['$scope', '$http', functio
 	<div class="container-fluid">
 		<div class="row">
 			<h3>Ich m&ouml;chte folgende Werksnutzung melden</h3>
-			<form class="form-horizontal" id="usageNotificationForm"
-				name="usageNotificationForm" ng-submit="submitForm()">
+			<form class="form-horizontal" ng-submit="submitForm()">
 				<div class="form-group">
 					<label for="author" class="col-md-1 control-label">Autor</label>
 					<div class="col-md-3">
