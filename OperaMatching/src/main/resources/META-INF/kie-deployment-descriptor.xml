@@ -40,6 +40,24 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new de.agentbase.gema.workitems.handler.RESTMatchCreationHandler()</identifier>
+            <parameters/>
+            <name>RestMatchService</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new de.agentbase.gema.workitems.handler.RESTWorkCreateHandler()</identifier>
+            <parameters/>
+            <name>RestWorkService</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new de.agentbase.gema.workitems.handler.MatchWorkItemHandler()</identifier>
+            <parameters/>
+            <name>GEMA_MATCH</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
