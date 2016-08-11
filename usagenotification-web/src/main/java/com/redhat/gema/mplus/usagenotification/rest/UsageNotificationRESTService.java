@@ -49,7 +49,8 @@ public class UsageNotificationRESTService {
 	@Inject
 	private Logger log;
 	private RuntimeEngine engine;
-	private MessageFormat mf = new MessageFormat("Werks-Nutzung gemeldet, Vorgangsnummer ist {0}. Autor: {1}, Titel: {2}, Datum: {3}, Dauer: {4}");
+	private MessageFormat mfSuccess = new MessageFormat("Werks-Nutzung gemeldet, Vorgangsnummer ist {0}. Autor: {1}, Titel: {2}, Datum: {3}, Dauer: {4}");
+	private MessageFormat mfError = new MessageFormat("Werks-Nutzung konnte nicht gemeldet werden, ein Fehler ist aufgetreten: {0}");
 	
 	public UsageNotificationRESTService() throws MalformedURLException {
 		String deploymentId = System.getProperty("com.redhat.gema.mplus.usagenotification.deploymentId",
@@ -84,10 +85,18 @@ public class UsageNotificationRESTService {
 
 			processInstance = kieSession.startProcess(USAGE_NOTIFICATION_PROCESS, parameters);
 		} catch (Exception e) {
-			return Response.serverError().status(500).entity(e.getMessage()).build();
+			return Response.serverError().status(500).entity(mfError.format(e.getMessage())).build();
 		}
 
-		String message = mf.format(new Object[] {processInstance.getId(), work.getAuthor(), work.getTitle(), work.getDate(), work.getDuration()});
+		String message = mfSuccess.format(
+				new Object[] {
+						processInstance.getId(),
+						null == work.getAuthor() ? "-" : work.getAuthor(), 
+						null == work.getTitle() ? "-" : work.getTitle(),
+						null == work.getDate() ? "-" : work.getDate(),
+						null == work.getDuration() ? "-" : work.getDuration()
+				}
+		);
 		
 		return Response.ok().status(200).entity(message).build();
 	}

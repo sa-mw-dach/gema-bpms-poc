@@ -4,10 +4,10 @@ public class work implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private String author = "";
-	private String date = null;
-	private String duration = "";
-	private String title = "";
+	private String author;
+	private String date;
+	private String duration;
+	private String title;
 
 	public work() {
 	}
