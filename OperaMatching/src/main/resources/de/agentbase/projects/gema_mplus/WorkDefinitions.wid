@@ -58,7 +58,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "icon" : "defaultservicenodeicon.png"
   ],
 
-    [
+  [
     "name" : "GEMA_MATCH",
     "parameters" : [
 		 "Work" : new ObjectDataType(),
