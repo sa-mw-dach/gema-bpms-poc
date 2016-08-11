@@ -29,6 +29,12 @@
       <version>1.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>com.redhat.ssa</groupId>
+      <artifactId>RestWIH</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <repositories>
     <repository>
