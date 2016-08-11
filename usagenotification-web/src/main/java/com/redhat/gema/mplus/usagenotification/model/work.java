@@ -1,20 +1,18 @@
 package com.redhat.gema.mplus.usagenotification.model;
 
-import java.util.Date;
-
 public class work implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
 	private String author = "";
-	private Date date;
-	private Integer duration;
+	private String date = null;
+	private String duration = "";
 	private String title = "";
 
 	public work() {
 	}
 
-	public work(String title, String author, java.util.Date date, Integer duration) {
+	public work(String title, String author, String date, String duration) {
 		this.title = title;
 		this.author = author;
 		this.date = date;
@@ -29,19 +27,19 @@ public class work implements java.io.Serializable {
 		this.author = author;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return this.date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
-	public Integer getDuration() {
+	public String getDuration() {
 		return this.duration;
 	}
 
-	public void setDuration(Integer duration) {
+	public void setDuration(String duration) {
 		this.duration = duration;
 	}
 

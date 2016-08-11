@@ -18,6 +18,7 @@ package com.redhat.gema.mplus.usagenotification.rest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.logging.Logger;
 
@@ -31,6 +32,7 @@ import javax.ws.rs.core.Response;
 
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeEngine;
+import org.kie.api.runtime.process.ProcessInstance;
 import org.kie.remote.client.api.RemoteRuntimeEngineFactory;
 
 import com.redhat.gema.mplus.usagenotification.model.work;
@@ -47,6 +49,7 @@ public class UsageNotificationRESTService {
 	@Inject
 	private Logger log;
 	private RuntimeEngine engine;
+	private MessageFormat mf = new MessageFormat("Werks-Nutzung gemeldet, Vorgangsnummer ist {0}. Autor: {1}, Titel: {2}, Datum: {3}, Dauer: {4}");
 	
 	public UsageNotificationRESTService() throws MalformedURLException {
 		String deploymentId = System.getProperty("com.redhat.gema.mplus.usagenotification.deploymentId",
@@ -71,17 +74,21 @@ public class UsageNotificationRESTService {
 	@Consumes("application/json")
 	@Produces("text/plain")
 	public Response usageNotication(work work) {
+		ProcessInstance processInstance = null;
+		
 		try {
 			KieSession kieSession = engine.getKieSession();
 
 			HashMap<String, Object> parameters = new HashMap<String, Object>();
 			parameters.put("WorkIncoming", work);
 
-			kieSession.startProcess(USAGE_NOTIFICATION_PROCESS, parameters);
+			processInstance = kieSession.startProcess(USAGE_NOTIFICATION_PROCESS, parameters);
 		} catch (Exception e) {
 			return Response.serverError().status(500).entity(e.getMessage()).build();
 		}
 
-		return Response.ok().status(200).entity("Werks-Nutzung gemeldet.").build();
+		String message = mf.format(new Object[] {processInstance.getId(), work.getAuthor(), work.getTitle(), work.getDate(), work.getDuration()});
+		
+		return Response.ok().status(200).entity(message).build();
 	}
 }
