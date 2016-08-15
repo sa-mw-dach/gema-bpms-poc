@@ -58,7 +58,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "icon" : "defaultservicenodeicon.png"
   ],
 
-    [
+  [
     "name" : "GEMA_MATCH",
     "parameters" : [
 		 "Work" : new ObjectDataType(),
@@ -68,6 +68,36 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
         "Result" : new ObjectDataType()
     ],
     "displayName" : "GEMA_MATCHSERVICE",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "RestMatchService",
+    "parameters" : [
+        "Url" : new StringDataType(),
+        "Method" : new StringDataType(),
+        "ContentType" : new StringDataType(),
+        "Content" : new ObjectDataType("de.agentbase.projects.gema_mplus.match")
+    ],
+    "results" : [
+        "Result" : new ObjectDataType()
+    ],
+    "displayName" : "RestMatchService",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "RestWorkService",
+    "parameters" : [
+        "Url" : new StringDataType(),
+        "Method" : new StringDataType(),
+        "ContentType" : new StringDataType(),
+        "Content" : new ObjectDataType("de.agentbase.projects.gema_mplus.work")
+    ],
+    "results" : [
+        "Result" : new ObjectDataType("de.agentbase.projects.gema_mplus.match")
+    ],
+    "displayName" : "RestWorkService",
     "icon" : "defaultservicenodeicon.png"
   ]
 ]

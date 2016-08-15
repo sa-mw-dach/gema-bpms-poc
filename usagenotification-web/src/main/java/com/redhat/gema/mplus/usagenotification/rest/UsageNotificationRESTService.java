@@ -18,6 +18,7 @@ package com.redhat.gema.mplus.usagenotification.rest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.logging.Logger;
 
@@ -31,6 +32,7 @@ import javax.ws.rs.core.Response;
 
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeEngine;
+import org.kie.api.runtime.process.ProcessInstance;
 import org.kie.remote.client.api.RemoteRuntimeEngineFactory;
 
 import com.redhat.gema.mplus.usagenotification.model.work;
@@ -47,10 +49,12 @@ public class UsageNotificationRESTService {
 	@Inject
 	private Logger log;
 	private RuntimeEngine engine;
+	private MessageFormat mfSuccess = new MessageFormat("Werks-Nutzung gemeldet, Vorgangsnummer ist {0}. Autor: {1}, Titel: {2}, Datum: {3}, Dauer: {4}");
+	private MessageFormat mfError = new MessageFormat("Werks-Nutzung konnte nicht gemeldet werden, ein Fehler ist aufgetreten: {0}");
 	
 	public UsageNotificationRESTService() throws MalformedURLException {
 		String deploymentId = System.getProperty("com.redhat.gema.mplus.usagenotification.deploymentId",
-				"gema:MPlusMatching:1.0-SNAPSHOT");
+				"gema:MPlusMatching:Master-SNAPSHOT");
 		String deploymentUrl = System.getProperty("com.redhat.gema.mplus.usagenotification.deploymentUrl",
 				"http://209.132.178.154:8080/business-central/");
 		String user = System.getProperty("com.redhat.gema.mplus.usagenotification.user", "GEMA1");
@@ -71,17 +75,29 @@ public class UsageNotificationRESTService {
 	@Consumes("application/json")
 	@Produces("text/plain")
 	public Response usageNotication(work work) {
+		ProcessInstance processInstance = null;
+		
 		try {
 			KieSession kieSession = engine.getKieSession();
 
 			HashMap<String, Object> parameters = new HashMap<String, Object>();
 			parameters.put("WorkIncoming", work);
 
-			kieSession.startProcess(USAGE_NOTIFICATION_PROCESS, parameters);
+			processInstance = kieSession.startProcess(USAGE_NOTIFICATION_PROCESS, parameters);
 		} catch (Exception e) {
-			return Response.serverError().status(500).entity(e.getMessage()).build();
+			return Response.serverError().status(500).entity(mfError.format(e.getMessage())).build();
 		}
 
-		return Response.ok().status(200).entity("Werks-Nutzung gemeldet.").build();
+		String message = mfSuccess.format(
+				new Object[] {
+						processInstance.getId(),
+						null == work.getAuthor() ? "-" : work.getAuthor(), 
+						null == work.getTitle() ? "-" : work.getTitle(),
+						null == work.getDate() ? "-" : work.getDate(),
+						null == work.getDuration() ? "-" : work.getDuration()
+				}
+		);
+		
+		return Response.ok().status(200).entity(message).build();
 	}
 }

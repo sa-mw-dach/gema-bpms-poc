@@ -3,6 +3,7 @@ package de.agentbase.gema.workitems.handler;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -26,15 +27,16 @@ public class MatchWorkItemHandler implements WorkItemHandler {
 	public final static String WORKITEMHANDLER_NAME = "GEMA_MATCH";
 
 	public final static String INPUT_PARAM_NAME_WORK = "Work";
+	public final static String INPUT_PARAM_NAME_SORT = "Sort";
 	public final static String OUTPUT_PARAM_NAME_RESULT = "Result";
 
 	@Inject
 	private Logger log;
 
 	public MatchWorkItemHandler() {
-
+		
 	}
-
+	 
 	public void abortWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
 		log.info("{} abortWorkItem", WORKITEMHANDLER_NAME);
 		// Nothing to do
@@ -48,6 +50,7 @@ public class MatchWorkItemHandler implements WorkItemHandler {
 		List<match> listMatch = new ArrayList<match>();
 
 		Object o = workItem.getParameter(INPUT_PARAM_NAME_WORK);
+		final String sort = (String) workItem.getParameter(INPUT_PARAM_NAME_SORT);
 		work w = (work) o;
 
 		if (w != null) {
@@ -99,6 +102,19 @@ public class MatchWorkItemHandler implements WorkItemHandler {
 			}
 		} else {
 			log.info("######## NO WORK OBJECT FOUND!!! ########");
+		}
+
+		if (!listMatch.isEmpty() && sort != null) {
+			Collections.sort(listMatch, new Comparator<match>() {
+				public int compare(match o1, match o2) {
+					if("ASC".equals(sort)){
+						return o1.getRelevance() - o2.getRelevance();
+					} else {
+						return o2.getRelevance() - o1.getRelevance();
+					}
+				}
+			});
+			log.info("SORTED MATCHs");
 		}
 		mc.setList(listMatch);
 		output.put(OUTPUT_PARAM_NAME_RESULT, mc);
